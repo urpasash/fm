@@ -889,5 +889,25 @@ namespace project_01_total
         {
            await Compress();
         }
+
+        private void фонToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (ColorDialog dialog = new ColorDialog())
+            {
+                dialog.ShowDialog();
+                tableLayoutPanel1.BackColor = dialog.Color;
+                toolStrip1.BackColor = dialog.Color;
+            }
+        }
+
+        private void шрифтToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (FontDialog dialog = new FontDialog())
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    listView1.Font = dialog.Font;
+                    listView2.Font = dialog.Font;
+                }
+        }
     }
 }

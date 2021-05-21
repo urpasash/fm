@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{CCC08A4C-08A3-4223-83C7-7DF218AAEB88}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>project_01_total</RootNamespace>
-    <AssemblyName>project_01_total</AssemblyName>
+    <RootNamespace>fm</RootNamespace>
+    <AssemblyName>fm</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,6 +31,12 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>files_file_explorer_manager_survey_icon_153069.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ionic.Zip">
@@ -112,6 +118,7 @@
     <None Include="Resources\Custom-Icon-Design-Mono-General-4-Refresh %281%291.ico" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="files_file_explorer_manager_survey_icon_153069.ico" />
     <Content Include="Resources\Custom-Icon-Design-Pretty-Office-8-Text-align-right.ico" />
     <Content Include="Resources\Rafiqul-Hassan-Blogger-Arrow-Back-4.ico" />
   </ItemGroup>
